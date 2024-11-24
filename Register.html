@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registerion form</title>
+</head>
+<body style="display: flex;justify-content: center;align-items: baseline;height: 750px;padding-top: 200px;">
+    <form style="border: 5px solid grey;border-radius: 5px;padding: 20px;">
+        <h1 style="color: red;text-align: center;">Register</h1>
+        <h3 style="color: black;">Name</h3><input placeholder="ENTER NAME" id="name" style="width: 90%;">
+        <h3 style="color: black;">Email</h3><input placeholder="ENTER NAME" type="email" style="width: 90%;">
+        <h3 style="color: black;">Phone</h3><input placeholder="ENTER NAME" id="number" style="width: 90%;">
+        <button style="background-color: green;padding: 20px;margin-top: 10px;margin-left: -2px;width: 100%;" id="submit">Submit</button>
+
+    </form>
+    
+</body>
+<script>
+    document.getElementById("submit").addEventListener('click',()=>
+{
+str=document.getElementById("name").value
+if(str.length>25)
+alert("exceeding values");
+else
+alert("successful!");
+})
+    </script>
+</html>
